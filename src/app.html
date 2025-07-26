@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" class="dark">
+	<head>
+		<title>SWO</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#1f2937" />
+		<script>
+			if (!localStorage.getItem('theme')) {
+				localStorage.setItem('theme', 'dark');
+			}
+			
+			// Only switch to light mode if explicitly set in localStorage
+			const storedTheme = localStorage.getItem('theme');
+			if (storedTheme === 'light') {
+				document.documentElement.classList.remove('dark');
+				document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff');
+			} else {
+				document.documentElement.classList.add('dark');
+				document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#1f2937');
+			}
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
