@@ -22,13 +22,13 @@
 	<!-- Main content -->
 	<div class="flex-1 flex flex-col overflow-hidden">
 		<!-- Sidebar (moved to right side) -->
-		<div class={`bg-white dark:bg-gray-800 shadow-lg transition-all duration-300 ${sidebarOpen ? 'w-64' : 'w-0'} overflow-hidden absolute right-0 top-16 h-[calc(100%-4rem)] z-10`}>
+  <div class={`bg-white dark:bg-gray-800 shadow-lg transition-all duration-300 ${sidebarOpen ? 'w-64' : 'w-0'} overflow-hidden absolute right-0 top-[5rem] h-[calc(100%-5rem)] z-10`}>
 			<div class="p-4">
 				<h2 class="text-xl font-bold mb-4 dark:text-white">SWO App</h2>
 				<nav>
 					<ul class="space-y-2">
 						<li><a href="/" class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Home</a></li>
-						<li><button type="button" class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Dashboard</button></li>
+      <li><a href="/dashboard" class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Dashboard</a></li>
 						<li><button type="button" class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Settings</button></li>
 						<li><button type="button" class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Profile</button></li>
 					</ul>
@@ -65,8 +65,4 @@
 </div>
 
 <style>
-	:global(html.dark) body {
-			background-color: #1f2937;
-			color: #ffffff;
-	}
 </style>
