@@ -104,9 +104,9 @@
 					{#each competitions as competition (competition.name)}
 						<tr 
 							class="md:hover:bg-gray-50 md:dark:hover:bg-gray-700 transition-colors cursor-pointer relative"
-							on:touchstart={() => handleTouchStart(competition)}
-							on:touchend={handleTouchEnd}
-							on:touchcancel={handleTouchEnd}
+							ontouchstart={() => handleTouchStart(competition)}
+							ontouchend={handleTouchEnd}
+							ontouchcancel={handleTouchEnd}
 						>
 							<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">{competition.name}</td>
 							<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">{competition.date}</td>
