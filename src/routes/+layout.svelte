@@ -4,6 +4,7 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import UserProfile from '$lib/components/UserProfile.svelte';
 
 	let { children } = $props();
 	let sidebarOpen = $state(false);
@@ -117,7 +118,8 @@
 		<header class="bg-white dark:bg-gray-800 shadow-sm transition-colors">
 			<div class="flex items-center justify-between p-4">
 				<h1 class="text-xl font-semibold dark:text-white">SWO Frontend</h1>
-				<div class="flex items-center space-x-2">
+				<div class="flex items-center space-x-4">
+					<UserProfile />
 					<ThemeToggle />
 					<button
 						onclick={toggleSidebar}
