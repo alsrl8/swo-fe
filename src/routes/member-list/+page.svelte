@@ -94,7 +94,13 @@
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
 		<h1 class="text-2xl font-bold mb-4 dark:text-white">회원 목록</h1>
 		<p class="text-gray-600 dark:text-gray-300">
-			러닝 동호회 회원들에 대한 정보를 확인할 수 있습니다.
+			러닝 동호회 회원들에 대한 정보를 확인할 수 있습니다. (실제 데이터를 사용하고 있지 않습니다.)
+		</p>
+		<p>
+			관리자 계정만 신규 회원을 추가하거나 회원 정보를 수정할 수 있습니다.
+		</p>
+		<p>
+			이 화면은 실제 데이터를 사용하게 되면 외부에 노출되지 않도록 편집해야 될 것 같네요.
 		</p>
 	</div>
 

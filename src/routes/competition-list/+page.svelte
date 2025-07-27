@@ -84,6 +84,12 @@
 		<p class="text-gray-600 dark:text-gray-300">
 			전국 러닝 대회 정보와 링크를 제공합니다.
 		</p>
+		<p>
+			이 페이지는 모든 사람에게 공개되어도 되지 않을까
+		</p>
+		<p>
+			간단한 정보와 신청 가능한 링크까지만 제공하는 게 좋을 것 같아요.
+		</p>
 	</div>
 
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
