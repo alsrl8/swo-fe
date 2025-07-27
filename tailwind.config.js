@@ -14,5 +14,8 @@ export default {
 			variants: ['dark'],
 		},
 	],
-  plugins: []
+  plugins: [],
+  corePlugins: {
+    backdropFilter: true
+  }
 }
