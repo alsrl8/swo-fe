@@ -10,7 +10,7 @@
 </script>
 
 <div class="overflow-x-auto">
-	<table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+	<table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 select-none">
 		<thead class="bg-gray-50 dark:bg-gray-700">
 			<tr>
 				{#each allColumns as column (column.id)}
