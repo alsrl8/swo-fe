@@ -19,4 +19,12 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
-export { auth, googleProvider };
+// Hardcoded list of admin emails
+const adminEmails = [
+	'admin@example.com',
+	'admin2@example.com',
+	'mingi4754song@gmail.com',
+	// Add more admin emails as needed
+];
+
+export { auth, googleProvider, adminEmails };

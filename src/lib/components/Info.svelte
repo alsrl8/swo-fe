@@ -12,6 +12,10 @@
   title="알림"
   content="이 사이트는 데모 버전으로 고객 정보를 사용하고 있지 않습니다."
 />
+<InfoAlert
+  title="알림"
+  content="이 사이트는 다크 모드를 권장합니다."
+/>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
   <InfoCard 
     title="러닝 동호회 관련 정보"

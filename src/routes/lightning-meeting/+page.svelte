@@ -82,6 +82,9 @@
 		<p class="text-gray-600 dark:text-gray-300">
 			다가오는 러닝 모임에 대한 정보를 확인하실 수 있습니다.
 		</p>
+		<p>
+			러닝 페이스, 거리, 주최자 등을 넣을 수 있으면 좋겠네요. 모임 후기 같은 것도 회원끼리는 볼 수 있도록 사진 추가도 할 수 있으면 좋겠습니다.
+		</p>
 	</div>
 
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
