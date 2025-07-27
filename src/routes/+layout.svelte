@@ -7,10 +7,10 @@
 
 	let { children } = $props();
 	let sidebarOpen = $state(false);
-	type MenuKey = 'learning';  // 향후 다른 메뉴가 추가될 경우 여기에 추가
+	type MenuKey = 'running';  // 향후 다른 메뉴가 추가될 경우 여기에 추가
 
 	let expandedMenus = $state<Record<MenuKey, boolean>>({
-		learning: false
+		running: false
 	});
 
 	function toggleSidebar() {
@@ -43,16 +43,16 @@
 <!--									 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Dashboard</a>-->
 <!--						</li>-->
 
-						<!-- Learning menu with submenu -->
+						<!-- Running menu with submenu -->
 						<li>
 							<button
 								type="button"
 								class="flex items-center justify-between w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors"
-								onclick={() => toggleSubmenu('learning')}
+								onclick={() => toggleSubmenu('running')}
 							>
 								<span>러닝</span>
 								<svg
-									class={`w-5 h-5 transition-transform duration-300 ${expandedMenus.learning ? 'transform rotate-180' : ''} fill-current`}
+									class={`w-5 h-5 transition-transform duration-300 ${expandedMenus.running ? 'transform rotate-180' : ''} fill-current`}
 									viewBox="0 0 24 24"
 									xmlns="http://www.w3.org/2000/svg"
 								>
@@ -67,7 +67,7 @@
 								</svg>
 							</button>
 
-							{#if expandedMenus.learning}
+							{#if expandedMenus.running}
 								<ul
 									class="pl-4 mt-1 space-y-1"
 									transition:slide={{ duration: 300, easing: quintOut }}
@@ -76,6 +76,18 @@
 										<a href="/competition-list"
 											 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">
 											대회 목록
+										</a>
+									</li>
+									<li>
+										<a href="/lightning-meeting"
+											 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">
+											번개 모임
+										</a>
+									</li>
+									<li>
+										<a href="/member-list"
+											 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">
+											회원 목록
 										</a>
 									</li>
 								</ul>

@@ -1,3 +1,15 @@
+/**
+ * Common interface for all table items
+ * This interface defines the common structure for all data types used in tables
+ */
+export interface TableItem {
+	name: string;
+	date: string;
+	location: string;
+	status: string;
+	statusClass: string;
+}
+
 export interface Column {
 	id: string;
 	label: string;

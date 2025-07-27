@@ -1,19 +1,19 @@
 <script lang="ts">
-	import type { Competition } from '$lib/components/competition';
+	import type { Member } from '$lib/components/member';
 	import type { Column, TableConfig } from '$lib/components/table';
 	import CommonTable from './CommonTable.svelte';
 
-	export let competitions: Competition[] = [];
+	export let members: Member[] = [];
 	export let allColumns: Column[] = [];
 	export let tableConfig: TableConfig;
-	export let onTouchStart: (competition: Competition) => void;
+	export let onTouchStart: (member: Member) => void;
 	export let onTouchEnd: () => void;
 
-	// Competition implements TableItem interface, so we can pass it directly to CommonTable
+	// Member implements TableItem interface, so we can pass it directly to CommonTable
 </script>
 
 <CommonTable 
-	items={competitions}
+	items={members}
 	allColumns={allColumns}
 	tableConfig={tableConfig}
 	onTouchStart={onTouchStart}
