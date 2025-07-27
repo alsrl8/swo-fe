@@ -20,7 +20,7 @@
 {#if $user}
   <div class="relative">
     <button 
-      on:click={toggleMenu}
+      onclick={toggleMenu}
       class="flex items-center space-x-2 focus:outline-none"
       aria-expanded={isMenuOpen}
       aria-haspopup="true"
@@ -50,7 +50,7 @@
         <a href="/profile" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" role="menuitem">Your Profile</a>
         <a href="/settings" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" role="menuitem">Settings</a>
         <button 
-          on:click={handleLogout}
+          onclick={handleLogout}
           class="block w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" 
           role="menuitem"
         >
