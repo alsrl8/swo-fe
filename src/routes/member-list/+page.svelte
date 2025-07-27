@@ -1,8 +1,10 @@
 <script lang="ts">
 	import CompetitionDetailModal from '$lib/components/CompetitionDetailModal.svelte';
+	import AddMemberModal from '$lib/components/AddMemberModal.svelte';
 	import MemberTable from '$lib/components/MemberTable.svelte';
 	import type { Member } from '$lib/components/member';
 	import type { Column, TableConfig } from '$lib/components/table';
+	import { isAdmin } from '$lib/stores/auth';
 
 
 	// Sample member data
@@ -53,9 +55,13 @@
 		visibleColumns: ['name', 'status']
 	};
 
+	// Detail modal state
 	let showDetailModal = $state(false);
 	let selectedMember: Member | null = $state(null);
 	let longPressTimer: number | null = null;
+
+	// Add member modal state
+	let showAddMemberModal = $state(false);
 
 	function handleTouchStart(member: Member) {
 		selectedMember = member;
@@ -74,6 +80,14 @@
 		showDetailModal = false;
 	}
 
+	function openAddMemberModal() {
+		showAddMemberModal = true;
+	}
+
+	function closeAddMemberModal() {
+		showAddMemberModal = false;
+	}
+
 </script>
 
 <div class="space-y-6">
@@ -85,7 +99,21 @@
 	</div>
 
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-		<h2 class="text-xl font-semibold mb-4 dark:text-white">회원 목록</h2>
+		<div class="flex justify-between items-center mb-4">
+			<h2 class="text-xl font-semibold dark:text-white">회원 목록</h2>
+			
+			{#if $isAdmin}
+				<button 
+					class="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg shadow-sm transition-all duration-200 flex items-center"
+					on:click={openAddMemberModal}
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+					</svg>
+					회원 추가
+				</button>
+			{/if}
+		</div>
 
 		<div class="md:hidden mb-3 text-sm text-gray-500 dark:text-gray-400 flex items-center">
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 fill-current" viewBox="0 0 20 20">
@@ -106,5 +134,8 @@
 
 		<!-- Mobile Detail Modal -->
 		<CompetitionDetailModal competition={selectedMember} show={showDetailModal} />
+		
+		<!-- Add Member Modal -->
+		<AddMemberModal show={showAddMemberModal} onClose={closeAddMemberModal} />
 	</div>
 </div>
