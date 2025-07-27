@@ -52,9 +52,8 @@
 							>
 								<span>러닝</span>
 								<svg
-									class={`w-5 h-5 transition-transform duration-300 ${expandedMenus.learning ? 'transform rotate-180' : ''}`}
+									class={`w-5 h-5 transition-transform duration-300 ${expandedMenus.learning ? 'transform rotate-180' : ''} fill-current`}
 									viewBox="0 0 24 24"
-									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
