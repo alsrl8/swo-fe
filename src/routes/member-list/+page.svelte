@@ -80,7 +80,7 @@
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
 		<h1 class="text-2xl font-bold mb-4 dark:text-white">회원 목록</h1>
 		<p class="text-gray-600 dark:text-gray-300">
-			회원 목록 페이지에 오신 것을 환영합니다. 여기서 러닝 클럽 회원들에 대한 정보를 확인할 수 있습니다.
+			러닝 동호회 회원들에 대한 정보를 확인할 수 있습니다.
 		</p>
 	</div>
 

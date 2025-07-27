@@ -82,12 +82,12 @@
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
 		<h1 class="text-2xl font-bold mb-4 dark:text-white">대회 목록</h1>
 		<p class="text-gray-600 dark:text-gray-300">
-			Welcome to the competition list page. Here you can find information about upcoming and past competitions.
+			전국 러닝 대회 정보와 링크를 제공합니다.
 		</p>
 	</div>
 
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-		<h2 class="text-xl font-semibold mb-4 dark:text-white">Competitions</h2>
+		<h2 class="text-xl font-semibold mb-4 dark:text-white">국내 마라톤</h2>
 
 		<div class="md:hidden mb-3 text-sm text-gray-500 dark:text-gray-400 flex items-center">
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 fill-current" viewBox="0 0 20 20">

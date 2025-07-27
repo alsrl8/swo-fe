@@ -117,7 +117,7 @@
 		<!-- Header -->
 		<header class="bg-white dark:bg-gray-800 shadow-sm transition-colors">
 			<div class="flex items-center justify-between p-4">
-				<h1 class="text-xl font-semibold dark:text-white">SWO Frontend</h1>
+				<h1 class="text-xl font-semibold dark:text-white">SWO</h1>
 				<div class="flex items-center space-x-4">
 					<UserProfile />
 					<ThemeToggle />

@@ -80,7 +80,7 @@
 	<div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
 		<h1 class="text-2xl font-bold mb-4 dark:text-white">번개 모임</h1>
 		<p class="text-gray-600 dark:text-gray-300">
-			번개 모임 페이지에 오신 것을 환영합니다. 여기서 다가오는 러닝 모임에 대한 정보를 확인할 수 있습니다.
+			다가오는 러닝 모임에 대한 정보를 확인하실 수 있습니다.
 		</p>
 	</div>
 
