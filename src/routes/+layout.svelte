@@ -39,9 +39,9 @@
 						<li><a href="/"
 									 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Home</a>
 						</li>
-						<li><a href="/dashboard"
-									 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Dashboard</a>
-						</li>
+<!--						<li><a href="/dashboard"-->
+<!--									 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">Dashboard</a>-->
+<!--						</li>-->
 
 						<!-- Learning menu with submenu -->
 						<li>
@@ -86,18 +86,18 @@
 						<li><a href="/restaurant-recommendation"
 									 class="block p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">맛집
 							추천</a></li>
-						<li>
-							<button type="button"
-											class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">
-								Settings
-							</button>
-						</li>
-						<li>
-							<button type="button"
-											class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">
-								Profile
-							</button>
-						</li>
+<!--						<li>-->
+<!--							<button type="button"-->
+<!--											class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">-->
+<!--								Settings-->
+<!--							</button>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<button type="button"-->
+<!--											class="block w-full text-left p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200 rounded transition-colors">-->
+<!--								Profile-->
+<!--							</button>-->
+<!--						</li>-->
 					</ul>
 				</nav>
 			</div>
